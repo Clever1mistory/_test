@@ -48,7 +48,7 @@ class BookmarkViewSet(viewsets.ModelViewSet):
                     url=link,
                     link_type='website',
                     preview_image=og_data['image'],
-                    user=request.user,  # Предполагается, что пользователь авторизован
+                    user=request.user, 
                     collection=None
                     # Если нужно добавить закладку в коллекцию, указать соответствующий объект Collection
                 )
